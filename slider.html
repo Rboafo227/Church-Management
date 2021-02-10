@@ -1,0 +1,57 @@
+<style>
+    [data-component="slideshow"] .slide {
+        display: none;
+        text-align: center;
+    }
+    
+    [data-component="slideshow"] .slide.active {
+        display: block;
+    }
+</style>
+
+<div id="slideshow-example" data-component="slideshow">
+    <div role="list">
+        <div class="slide">
+            <img src=" images/1.jpeg " style=" width:100% ">
+        </div>
+
+        <div class="slide">
+            <img src=" images/2.jpeg " style=" width:100% ">
+        </div>
+        <div class="slide">
+            <img src=" images/3.jpeg " style=" width:100% ">
+        </div>
+
+        <div class="slide">
+            <img src=" images/4.jpeg " style=" width:100% ">
+        </div>
+
+        <div class="slide">
+            <img src=" images/5.jpeg " style=" width:100% ">
+        </div>
+    </div>
+</div>
+
+<script>
+    var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+    slideshows.forEach(initSlideShow);
+
+    function initSlideShow(slideshow) {
+
+        var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+        var index = 0,
+            time = 5000;
+        slides[index].classList.add('active');
+
+        setInterval(() => {
+            slides[index].classList.remove('active');
+
+            index++;
+            if (index === slides.length) index = 0;
+
+            slides[index].classList.add('active');
+
+        }, time);
+    }
+</script>
