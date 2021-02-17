@@ -50,11 +50,9 @@
 
     <script src="assets/DataTables/datatables.min.js"> </script>
 
-    <script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"> </script>
+    <script src="assets/DataTables/dataTables.button.min.js"> </script>
 
-
-
-    <script src="https://cdn.datatables.net/buttons/1.6.5/js/buttons.print.min.js"> </script>
+    <script src="assets/DataTables/buttons.print.min.js"> </script>
 
     <script>
         $(function() {

@@ -20,16 +20,16 @@
 
                               <div class="form-group row">
                                   <div class="col-md-3">
-                                      <label class="control-label col-form-label">Name</label>
+                                      <label class="control-label col-form-label">Username</label>
                                   </div>
                                   <div class="col-md-9">
                                       <select name="name" class="form-control" required>
                                           <OPTION VALUE=0>Choose
                                               <?php
                                                 $conn = mysqli_connect('localhost', 'root', '', 'project');
-                                                $result = mysqli_query($conn, "SELECT name FROM `members`");
+                                                $result = mysqli_query($conn, "SELECT username FROM `members`");
                                                 while ($row = mysqli_fetch_array($result)) {
-                                                    $name = $row["name"];
+                                                    $name = $row["username"];
                                                     echo '<OPTION VALUE="' . $name . '">' . $name . '</OPTION>';
                                                 }
                                                 mysqli_close($conn); //stänger connectio till DB system;

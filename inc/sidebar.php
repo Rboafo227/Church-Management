@@ -19,28 +19,41 @@
        </li>
 
        <li>
-         <a href="church.php"><i class="fa fa-th"></i> <span>Add Church</span></a> </li>
+         <a href="tithes.php"><i class="fa fa-money"></i> <span>Tithes & Offerings</span></a>
+       </li>
+
 
        <li>
-         <a href="staff.php"><i class="fa fa-heart"></i> <span>Add Staff</span></a> </li>
+         <a href="church.php"><i class="fa fa-th"></i> <span>Add Church</span></a>
+       </li>
 
        <li>
-         <a href="location.php"><i class="fa fa-mouse-pointer"></i> <span>Add Location</span></a> </li>
+         <a href="staff.php"><i class="fa fa-heart"></i> <span>Add Staff</span></a>
+       </li>
 
        <li>
-         <a href="role.php"><i class="fa fa-table"></i> <span>Add Role</span></a> </li>
+         <a href="location.php"><i class="fa fa-mouse-pointer"></i> <span>Add Location</span></a>
+       </li>
 
        <li>
-         <a href="events.php"><i class="fa fa-area-chart"></i> <span>Add Event</span></a> </li>
+         <a href="role.php"><i class="fa fa-table"></i> <span>Add Role</span></a>
+       </li>
 
        <li>
-         <a href="sermon.php"><i class="fa fa-edit"></i> <span>Add Sermon</span></a> </li>
+         <a href="events.php"><i class="fa fa-area-chart"></i> <span>Add Event</span></a>
+       </li>
 
        <li>
-         <a href="groups.php"><i class="fa fa-magic"></i> <span>Add group</span></a> </li>
+         <a href="sermon.php"><i class="fa fa-edit"></i> <span>Add Sermon</span></a>
+       </li>
 
        <li>
-         <a href="type.php"><i class="fa fa-edit"></i> <span>Add Type</span></a> </li>
+         <a href="groups.php"><i class="fa fa-magic"></i> <span>Add group</span></a>
+       </li>
+
+       <li>
+         <a href="type.php"><i class="fa fa-edit"></i> <span>Add Type</span></a>
+       </li>
        <li>
          <a href="reports.php"><i class="fa fa-mouse-pointer"></i> <span>Pages</span></a>
          <ul>
@@ -50,9 +63,11 @@
            <li><a href="#">Pastors List</a></li>
          </ul>
        <li>
-         <a href="reports.php"><i class="fa fa-edit"></i> <span>Report Summary</span></a> </li>
+         <a href="reports.php"><i class="fa fa-edit"></i> <span>Report Summary</span></a>
+       </li>
        <li>
-         <a href="signout.php"><i class="fa fa-edit"></i> <span>logout</span></a> </li>
+         <a href="signout.php"><i class="fa fa-edit"></i> <span>logout</span></a>
+       </li>
      </ul>
    </div>
  </div>

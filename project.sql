@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 13, 2020 at 12:05 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: Feb 15, 2021 at 08:50 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -30,11 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `allocations` (
   `id` int(11) NOT NULL,
-  `user-username` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
   `paid` bigint(11) NOT NULL,
   `others` varchar(255) NOT NULL,
-  `due` bigint(12) NOT NULL
+  `date` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `allocations`
+--
+
+INSERT INTO `allocations` (`id`, `username`, `paid`, `others`, `date`) VALUES
+(2, 'John Doe', 10000, 'Tithe', NULL);
 
 -- --------------------------------------------------------
 
@@ -351,7 +357,7 @@ ALTER TABLE `year`
 -- AUTO_INCREMENT for table `allocations`
 --
 ALTER TABLE `allocations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `entities`

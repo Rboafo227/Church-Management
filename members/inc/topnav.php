@@ -38,6 +38,10 @@
             </li> &nbsp &nbsp &nbsp
 
             <li>
+                <a href="tithes.php"><i class="fa fa-money"></i> <span style="color:white;">My Tithes & Offerings</span></a>
+            </li> &nbsp &nbsp &nbsp
+
+            <li>
                 <a href="events.php"><i class="fa fa-pencil"></i> <span style="color:white;">Church Events</span></a>
 
             </li> &nbsp &nbsp &nbsp
